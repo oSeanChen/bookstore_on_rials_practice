@@ -23,6 +23,19 @@ class BooksController < ApplicationController
     end
   end
   
+  def edit
+    @book = Book.find_by(id: params[:id])
+  end
+
+  def update
+    @book = Book.find_by(id: params[:id])
+      if @book.update(book_params)
+        flash[:notice] = "Book edited!!"
+        redirect_to "/books"
+      else
+        render :edit
+      end
+  end
 
   private
   def book_params

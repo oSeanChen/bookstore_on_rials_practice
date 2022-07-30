@@ -1,4 +1,4 @@
-<h1>商品列表</h1>
+<h1>編輯書本</h1>
 
 
 <% if @book.errors.any? %>
@@ -15,6 +15,6 @@
 
 <%= form.label :content, "介紹" %> 
 <%= form.text_area :content%>
-<%= form.submit "新增商品" %>
-<%# <input type="submit" value="新增商品"> %>
+<%= form.submit "更新商品" %>
+<%# <input type="submit" value="更新商品"> %>
 <% end %>
