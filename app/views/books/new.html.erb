@@ -1,0 +1,19 @@
+<h1>商品列表</h1>
+
+
+<% if @book.errors.any? %>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @book do |form| %>
+<%= form.label :title, "書名" %> 
+<%= form.text_field :title%>
+
+<%= form.label :content, "介紹" %> 
+<%= form.text_area :content%>
+<input type="submit" value="新增商品">
+<% end %>

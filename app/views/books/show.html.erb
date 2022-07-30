@@ -1,0 +1,14 @@
+<% if @book %>
+
+<h1><%= @book.title %></h1>
+
+<ul>
+  <li>書名: <%= @book.title %></li>
+  <li>內容介紹: <%= @book.content %></li>
+</ul>
+
+<% else %>
+
+<h1>No Record found!</h1>
+
+<% end %>
