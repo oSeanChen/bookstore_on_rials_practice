@@ -15,6 +15,10 @@
 
 <%= form.label :content, "介紹" %> 
 <%= form.text_area :content%>
+
+<%= form.label :price, "價錢" %> 
+<%= form.number_field :price%>
+
 <%= form.submit "新增商品" %>
 <%# <input type="submit" value="新增商品"> %>
 <% end %>

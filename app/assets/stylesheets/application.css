@@ -13,15 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.field_with_errors {
-  display: inline;
-
-  input[type="text"] {
-    border: 3px solid red;
-  }
-
-  textarea[name="book[content]"] {
-    border: 3px solid red;
-  }
-}
